@@ -19,6 +19,11 @@ VARIANTS = {
         "name": "Heltec WiFi LoRa 32 V3",
         "bootloader_offset": 0x0,
     },
+    "HTIT-WB32LAF": {
+        "chip": "ESP32-S3",
+        "name": "HTIT-WB32LAF",
+        "bootloader_offset": 0x0,
+    },
     "tbeam": {
         "chip": "ESP32",
         "name": "TTGO T-Beam (SX1276)",

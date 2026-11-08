@@ -241,10 +241,16 @@ void drawPageServices(const axlora::display::DisplayInfo& info) {
 namespace axlora::display {
 
 void init() {
-  // Power on OLED via Vext switch if the variant has one.
+  // Power on OLED via Vext switch if the variant has one. PlatformIO's
+  // selected environment is represented by the AXLORA_VARIANT_* build flag;
+  // default_envs itself is only a default selection, not a C++ variable.
   if constexpr (variant::PIN_OLED_VEXT >= 0) {
     pinMode(variant::PIN_OLED_VEXT, OUTPUT);
-    digitalWrite(variant::PIN_OLED_VEXT, HIGH);
+#if defined(AXLORA_VARIANT_HTIT_WB32LAF)
+    digitalWrite(variant::PIN_OLED_VEXT, LOW);   // HTIT-WB32LAF / V3.2
+#else
+    digitalWrite(variant::PIN_OLED_VEXT, HIGH);  // Heltec V3
+#endif
     delay(50);
   }
   Wire.begin(variant::PIN_OLED_SDA, variant::PIN_OLED_SCL);

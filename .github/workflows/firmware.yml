@@ -30,6 +30,7 @@ jobs:
         include:
           - env: devkitv1_e22
           - env: heltec_v3
+          - env: HTIT-WB32LAF
           - env: tbeam
           - env: lilygo_t3_v161
 
