@@ -33,7 +33,7 @@
   ],
   "channels": {
     "dev": {
-      "version": "dev-d93f884",
+      "version": "dev-6a08c4b",
       "date": "2026-11-12",
       "manifest_path": "firmware/dev/{board}/manifest.json",
       "commit_url": ""

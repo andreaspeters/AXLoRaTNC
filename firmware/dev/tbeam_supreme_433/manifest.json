@@ -1,6 +1,6 @@
 {
   "name": "AXLoRaTNC \u2013 LILYGO T-Beam SUPREME 433MHz (SX1262)",
-  "version": "dev-d93f884",
+  "version": "dev-6a08c4b",
   "new_install_prompt_erase": true,
   "builds": [
     {

@@ -1,6 +1,6 @@
 {
   "name": "AXLoRaTNC \u2013 LilyGo T3 LoRa32 V1.6.1",
-  "version": "dev-d93f884",
+  "version": "dev-6a08c4b",
   "new_install_prompt_erase": true,
   "builds": [
     {
