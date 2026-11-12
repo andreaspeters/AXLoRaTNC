@@ -2,21 +2,21 @@
 
 AXLoRaTNC is a real AX.25 packet-radio TNC for ESP32 + LoRa. AX.25 Level 2 frames stay AX.25 frames; LoRa only replaces the classic AFSK/FSK modem layer.
 
-**[📖 Full documentation](https://michtronics.github.io/AXLoRaTNC/)  ·  [⚡ Web installer](https://michtronics.github.io/AXLoRaTNC/flash/)  ·  [📦 Releases](https://github.com/MichTronics/AXLoRaTNC/releases)**
+**[📖 Full documentation](https://andreaspeters.github.io/AXLoRaTNC/)  ·  [⚡ Web installer](https://andreaspeters.github.io/AXLoRaTNC/flash/)  ·  [📦 Releases](https://github.com/MichTronics/AXLoRaTNC/releases)**
 
 ## Flash (easiest)
 
 Use the browser-based installer — no drivers or tools needed. Works in Chrome and Edge.
 
-👉 **[https://michtronics.github.io/AXLoRaTNC/flash/](https://michtronics.github.io/AXLoRaTNC/flash/)**
+👉 **[https://andreaspeters.github.io/AXLoRaTNC/flash/](https://andreaspeters.github.io/AXLoRaTNC/flash/)**
 
 ## Target hardware
 
 | Variant | MCU | Radio | Build env | Status |
 |---|---|---|---|---|
 | ESP32 DevKit V1 + EBYTE E22 | ESP32 | SX1262 | `devkitv1_e22` | ✅ tested |
-| Heltec WiFi LoRa 32 V3 | ESP32-S3 | SX1262 | `heltec_v3` | ⚠ not tested |
-| HTIT-WB32LAF | ESP32-S3 | SX1262 | `HTIT-WB32LAF` | ⚠ not tested |
+| Heltec WiFi LoRa 32 V3 | ESP32-S3 | SX1262 | `heltec_v3` | ✅ tested |
+| HTIT-WB32LAF, Heltec V3.2 | ESP32-S3 | SX1262 | `HTIT-WB32LAF` | ✅ tested |
 | TTGO T-Beam | ESP32 | SX1276 | `tbeam` | ⚠ not tested |
 | LilyGo T3 LoRa32 V1.6.1 | ESP32 | SX1276 | `lilygo_t3_v161` | ✅ tested |
 | LILYGO T-Beam SUPREME 433MHz | ESP32-S3 | SX1262 | `tbeam_supreme_433` | ⚠ not tested |
@@ -306,7 +306,7 @@ Monitor frame format: `FM SRC TO DST [VIA R1,R2] <TYPE> RSSI=x SNR=y[:info]`
 
 Legacy hostmode compatibility target: TFPCX/TSTHOST, WinPack, BPQ32/LinBPQ (port type `DED`), JNOS, Graphic Packet, PaxTerm. For F6FBB/LinFBB, KISS through Linux AX.25 is recommended.
 
-For full protocol details see [website/guide/wa8ded](https://michtronics.github.io/AXLoRaTNC/guide/wa8ded).
+For full protocol details see [website/guide/wa8ded](https://andreaspeters.github.io/AXLoRaTNC/guide/wa8ded).
 
 ---
 
