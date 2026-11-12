@@ -14,7 +14,7 @@ hero:
       link: /guide/
     - theme: alt
       text: GitHub
-      link: https://github.com/MichTronics/AXLoRaTNC
+      link: https://github.com/andreaspeters/AXLoRaTNC
 
 features:
   - title: AX.25 Level 2
